@@ -1,0 +1,168 @@
+.carousel-item {
+    height: 100vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.carousel-caption h1 {
+    color: white;
+    text-shadow: 0 0 2px black;
+    letter-spacing: 10px;
+    margin-bottom: 15px;
+}
+
+.carousel-caption .btn {
+    box-shadow: 0px 0px 3px #888888 !important;
+}
+
+.carousel-caption .btn:hover {
+    box-shadow: 0px 0px 6px black !important;
+}
+
+.carousel-caption .btn:focus {
+    border: 1px solid black;
+}
+
+.navbar {
+    background: rgba(255, 255, 255, 0.8) !important;
+}
+
+h2 {
+    color: #333;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    position: relative;
+    margin: 25px 0 50px;
+}
+
+h2::after {
+    content: "";
+    width: 200px;
+    position: absolute;
+    margin: 0 auto;
+    height: 3px;
+    background: #e95420;
+    left: 0;
+    right: 0;
+    bottom: -10px;
+}
+
+/* }
+.display-3{
+    color: #e95420 !important;
+} */
+
+h5 {
+    color: #e95420 !important;
+}
+
+h5 {
+    color: #e95420 !important;
+}
+
+input[type=text] {
+    border: 1px solid #ff4444;
+    border-radius: 5px;
+}
+
+body,
+html {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.bg-img {
+    background-image: url(".././img/bg-reserve.jpg");
+    min-height: 380px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/* Add styles to the form container-bgimg */
+.bg-img .container-bgimg {
+    position: relative;
+
+    margin: 0 auto;
+    max-width: 500px;
+    padding: 16px;
+    background-color: white;
+    opacity: 0.95;
+}
+
+/* Full-width input fields */
+.bg-img input[type=text],
+.bg-img input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+    border: 1px solid #f1f1f1;
+    border-radius: 5px;
+
+}
+
+.bg-img input[type=text]:focus,
+input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Set a style for the submit button */
+.bg-img .btn {
+    background-color: #ff4444;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    margin-top: 5px;
+    border: 1px solid red;
+    border-radius: 5px;
+
+}
+
+.bg-img input[type=date],
+.bg-img select {
+    background-color: #b1b1b1;
+    color: white;
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.bg-img .btn:hover {
+    opacity: 1;
+}
+
+.divider {
+    border-top: 1px solid lightgrey;
+    width: 75%;
+    margin: 0 auto;
+}
+
+footer a:hover {
+    color: #ff4444 !important;
+}
+
+.nav-link:hover {
+    color: black !important;
+}
