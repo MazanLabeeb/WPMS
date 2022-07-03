@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>WPMS</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
@@ -13,36 +13,10 @@
 
 <body>
 
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">WPMS</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#anchor-photographer" id>Photograpers</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#anchor-reserve">Reserve</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Login</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Register</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
+    <?php
+        require("./includes/nav.php");
+    ?>
+    
     <header>
 
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
@@ -53,21 +27,21 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active" style="background-image: url('./src/img/1.jpg')">
-                    <div class="carousel-caption animate__animated animate__pulse">
+                    <div class="carousel-caption animate__heartBeat">
                         <h1 class="display-1 ">Modern</h1>
-                        <a class="btn btn-sm btn-light " href="#about">Select the Package</a>
+                        <a class="btn btn-sm btn-light " href="./checkout.php?orderID=1">Select the Package</a>
                     </div>
                 </div>
                 <div class="carousel-item" style="background-image: url('./src/img/2.jpg')">
-                    <div class="carousel-caption animate__animated animate__pulse">
+                    <div class="carousel-caption animate__heartBeat">
                         <h1 class="display-1 ">Elegant</h1>
-                        <a class="btn btn-sm btn-light " href="#about">Select the Package</a>
+                        <a class="btn btn-sm btn-light " href="./checkout.php?orderID=2">Select the Package</a>
                     </div>
                 </div>
                 <div class="carousel-item" style="background-image: url('./src/img/3.jpg')">
-                    <div class="carousel-caption animate__animated animate__pulse">
+                    <div class="carousel-caption animate__heartBeat">
                         <h1 class="display-1">Professional</h1>
-                        <a class="btn btn-sm btn-light " href="#about">Select the Package</a>
+                        <a class="btn btn-sm btn-light " href="./checkout.php?orderID=3">Select the Package</a>
                     </div>
                 </div>
             </div>
@@ -97,8 +71,8 @@
 
             </div>
             <div class="col-sm-5">
-                <div class="row">
-                    <h1 class="display-3 text-danger" style="text-align: center;">Usama Ali</h1>
+                <div class="row ">
+                    <h1 class=" display-3 text-danger animate__animated animate__bounce" style="text-align: center;">Usama Ali</h1>
                     <p style="color: grey;">Editorial / Architectural Skills</p>
                     <div>
                         <span class="fa fa-star checked text-warning"></span>
@@ -170,9 +144,9 @@
     </div>
     <div class="divider"></div>
 
-    <h2 id="anchor-reserve">Reserve</h2>
+    <h2 id="anchor-reserve">Reservation</h2>
     <div class="bg-img">
-        <form action="/action_page.php" class="container-bgimg">
+        <form action="./reservation.php" method="post" class="container-bgimg">
             <h1 style="text-align: center;">Reserve a Date</h1>
 
             <label for="name"><b>Name</b></label>
@@ -186,13 +160,13 @@
 
             <label for="foto"><b>Select Photographer</b></label>
 
-            <select name="foto" id="foto">
-                <option value="volvo">Usama Ali</option>
-                <option value="saab">Zaid Alvi</option>
-                <option value="mercedes">Olivia Emma</option>
+            <select name="photographer" id="foto">
+                <option value="Usama Ali">Usama Ali</option>
+                <option value="Zaid Alvi">Zaid Alvi</option>
+                <option value="Olivia Emma">Olivia Emma</option>
             </select>
             <label for="date"><b>Select a date:</b></label>
-            <input type="date" id="date" name="date">
+            <input type="date" id="date" name="date" required>
 
 
             <button type="submit" class="btn">Reserve</button>
@@ -252,9 +226,7 @@
                         </div>
                     </div>
 
-                    <div class="d-flex justify-content-between pt-4 border-top">
-                        <p>&copy; 2022 WPMS Company, Inc. All rights reserved.</p>
-                    </div>
+                   
                 </footer>
             </div>
 

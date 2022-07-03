@@ -12,11 +12,12 @@
     color: white;
     text-shadow: 0 0 2px black;
     letter-spacing: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
 }
 
 .carousel-caption .btn {
     box-shadow: 0px 0px 3px #888888 !important;
+    margin-bottom: 20px;
 }
 
 .carousel-caption .btn:hover {
@@ -28,7 +29,8 @@
 }
 
 .navbar {
-    background: rgba(255, 255, 255, 0.8) !important;
+    background: #f2f2f2 !important;
+    opacity: 0.9;
 }
 
 h2 {
@@ -66,10 +68,6 @@ h5 {
     color: #e95420 !important;
 }
 
-input[type=text] {
-    border: 1px solid #ff4444;
-    border-radius: 5px;
-}
 
 body,
 html {
@@ -165,4 +163,42 @@ footer a:hover {
 
 .nav-link:hover {
     color: black !important;
+}
+
+
+.btn-primary {
+    color: #fff;
+    background-color: #e95420;
+    border-color: red;
+}
+
+.btn-primary:hover{
+    color: #fff;
+    background-color: #ff4444 ;
+    border-color: red;
+}
+
+
+.btn-primary.focus,
+.btn-primary:focus {
+    color: #fff;
+    border-color: red;;
+    box-shadow: 0 0 0 .2rem rgba(233, 84, 32, .5) !important;
+}
+
+
+
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show>.btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color:red;
+    border-color: red
+}
+
+.bg-primary{
+    background: #e95420 !important;
+}
+.border-primary{
+    border: 1px solid #e95420 !important;
 }
