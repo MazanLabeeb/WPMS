@@ -2,10 +2,10 @@
 
 // 	ADMIN EMAIL: admin@wpms.com
 //  ADMIN PASS : wpmsproject100
-$servername = "localhost";
-$username = "root";
-$password = "";
-$db = "wpms";
+$servername = "sql6.freemysqlhosting.net";
+$username = "sql6519225";
+$password = "QNei76tGUX";
+$db = "sql6519225";
 // Create connection
 $conn = mysqli_connect($servername, $username, $password, $db);
 
